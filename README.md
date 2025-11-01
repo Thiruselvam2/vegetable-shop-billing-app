@@ -47,6 +47,10 @@ pyinstaller --add-data "Noto_Sans_Tamil;Noto_Sans_Tamil" --onefile svs_billing_a
 
 [Add your application screenshots here]
 
+## Repository cleanup notice
+
+Sensitive files (database, invoices, build artifacts) were removed from the repository history to protect personal data. If you cloned this repo prior to this cleanup, please delete your local clone and re-clone the repository to get the cleaned history.
+
 ## License
 
 [Choose your license]
