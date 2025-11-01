@@ -34,10 +34,11 @@ except Exception:
     WEASY_AVAILABLE = False
 
 # --- CONFIGURATION & DATABASE SETUP ---
-DB_NAME = 'svs_sales_db.db'
-COMPANY_NAME = "SRI MURUGAN VEGETABLES"
-COMPANY_ADDRESS = "Opposite Gowri Restaurant, Close to Narayana Nagar, Komarapalayam"
-COMPANY_PHONE = "+91 96595 82897"
+DB_NAME = os.getenv('DB_NAME', 'svs_sales_db.db')
+# Use environment variables or placeholders to avoid committing personal data
+COMPANY_NAME = os.getenv('COMPANY_NAME', 'Your Company')
+COMPANY_ADDRESS = os.getenv('COMPANY_ADDRESS', 'Your Address, City')
+COMPANY_PHONE = os.getenv('COMPANY_PHONE', '')
 
 # --- UI THEME (unique style: dark navy + saffron accent) ---
 THEME_BG = "#0ADAFF"            # deep navy background
