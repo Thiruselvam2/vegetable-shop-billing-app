@@ -523,7 +523,11 @@ def generate_pdf_invoice(bill_id, customer_name, items, total_amount, title="INV
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("SRI MURUGAN VEGETABLES Wholesale Billing System")
+        # Use COMPANY_NAME (env-backed) to avoid hard-coded personal/company data
+        try:
+            self.title(f"{COMPANY_NAME} Wholesale Billing System")
+        except Exception:
+            self.title("Wholesale Billing System")
         # Ensure the window expands fully
         self.geometry("900x600") 
         # Apply unique appearance and use per-widget colors for a custom theme
