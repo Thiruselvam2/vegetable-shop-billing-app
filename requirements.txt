@@ -1,0 +1,6 @@
+customtkinter
+tkinter
+sqlite3
+reportlab
+weasyprint
+pillow
