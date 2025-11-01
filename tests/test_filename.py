@@ -1,5 +1,4 @@
-# Tests for SVS Billing App
-import pytest
+    # Tests for SVS Billing App
 from svs_billing_app import make_pdf_filename
 
 def test_pdf_filename_sanitization():
