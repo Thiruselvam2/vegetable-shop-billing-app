@@ -1,0 +1,26 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Distribution/packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Database files (optional - decide if you want to include sample db)
+# *.db
+
+# Generated PDFs
+Invoices/*.pdf
+
+# Environment variables
+.env
